@@ -48,8 +48,7 @@ class flappy_bird(Frame):
         self.lost = False
 
     def create_piping(self):
-        gap_height = random.randrange(CANVAS_HEIGHT-400)
-
+        gap_height = random.randrange(CANVAS_HEIGHT-600) + 200
         self.pipes.append(Pipe(Pos(CANVAS_WIDTH, gap_height-1000)))
         self.pipes.append(Pipe(Pos(CANVAS_WIDTH, gap_height + PIPE_GAP)))
 
